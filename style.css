@@ -1,0 +1,185 @@
+:root {
+  --green: green;
+}
+
+body {
+  margin: 0;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.hero-div {
+  background-color: #166d3b;
+  background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
+  height: 600px;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 10px;
+  }
+
+.hero-subtitle {
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #e9ecef;
+  text-align: center;
+  position: relative;
+  bottom: 40px;
+}
+
+.hero-image {
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: transparent;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 45px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+.flower-icon {
+  position: relative;
+  left: 30px;
+  color: white;
+  transform: scale(1.5);
+}
+
+.image-div {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 100px;
+}
+
+.first-image-div {
+  display: inline-block;
+}
+
+.first-image {
+  width: 400px;
+  box-shadow:
+    -50px -50px 0 -40px var(--green),
+    50px 50px 0 -40px var(--green);
+}
+
+.first-image-div p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.second-image {
+  width: 400px;
+  box-shadow:
+    -50px -50px 0 -40px var(--green),
+    50px 50px 0 -40px var(--green);
+}
+
+.second-image-div p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.third-image {
+  width: 400px;
+  box-shadow:
+    -50px -50px 0 -40px var(--green),
+    50px 50px 0 -40px var(--green);
+}
+
+.third-image-div p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+button {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
+  background-color: darkgreen;
+  height: 30px;
+  width: 80px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: green;
+}
+
+button:active {
+  background-color: rgb(0, 73, 0);
+}
+
+.footer-div {
+  display: flex;
+  justify-content: center;
+  background-color: #166d3b;
+  background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
+  height: 300px;
+  width: 100%;
+  margin-top: 190px;
+  color: white;
+}
+
+.footer-subdiv {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 25px;
+  height: 250px;
+  width: 100%;
+  margin: 0 40px;
+}
+
+.section-div {
+  display: flex;
+  height: 250px;
+  width: 300px;
+  justify-content: space-around;
+}
+
+@media (max-width: 992px) {
+  .image-div {
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+
+  .first-image-div, .second-image-div {
+    margin-bottom: 50px;
+  }
+}
